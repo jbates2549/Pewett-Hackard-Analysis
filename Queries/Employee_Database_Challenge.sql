@@ -145,3 +145,9 @@ INNER JOIN titles AS ti
 ON (e.emp_no = ti.emp_no)
 WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 ORDER BY e.emp_no;
+--  Mentoring Employee count by title
+SELECT COUNT(me.emp_no), me.title
+INTO mentoring_titles
+FROM mentorship_eligibility as me
+GROUP BY me.title
+ORDER BY COUNT DESC;
