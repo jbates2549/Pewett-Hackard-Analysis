@@ -151,3 +151,6 @@ INTO mentoring_titles
 FROM mentorship_eligibility as me
 GROUP BY me.title
 ORDER BY COUNT DESC;
+-- Combined query
+SELECT * FROM mentoring_titles
+LEFT JOIN retiring_titles ON mentoring_titles.title = retiring_titles.title;
