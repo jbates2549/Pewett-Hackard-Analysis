@@ -24,15 +24,15 @@ For the second part of our analysis we ran a query to determine which employees 
 ![image name](https://github.com/jbates2549/Pewett-Hackard-Analysis/blob/main/mentorship_eligibility.PNG)
 
 ### Summary of Conclusions and Further Analysis
-* The greatest needs are for Senior Engineers and Senior Staff.
-* The Manager position is the least needed position to fill.
-* We needed a summary of the Employees Eligible for the mentorship program to compare to the retiring employees.  We created an addition query taking a count of the mentorship eligible employees by title.  Please see summary table below. 
-* From the table below we can see that there is an acute shortage of engineers and managers to mentor into the needed senior positions.
+We determined thatto compare the number of positions from the likely retiring group to the current positions in the mentorship group, we would need to summarize the members of the mentorship group by title as we did for the retirement group.  The table below shows this summary. 
 
 ![image name](https://github.com/jbates2549/Pewett-Hackard-Analysis/blob/main/mentoring_titles.PNG)
 
-*
-*
-*
-*
+We joined the mentoring group titles summary with the retiring titles summary to compare the number of positions for each group using a left join of the tables.  The summary of that query, below, shows the counts by position for each group.
 ![image name](https://github.com/jbates2549/Pewett-Hackard-Analysis/blob/main/combined_title.PNG)
+Based on our analysis we conclude the following:
+* There is a large shortage, overall in positions from the mentorship group.
+* The greatest needs are for Senior Engineers and Senior Staff followed by engineers.
+* The Manager position is the least needed position to fill.
+* We needed a summary of the Employees Eligible for the mentorship program to compare to the retiring employees.  We created an addition query taking a count of the mentorship 
+* The recommendation is to augment overall staff immediately with focus on engineering positions.
