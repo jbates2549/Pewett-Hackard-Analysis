@@ -67,3 +67,29 @@ INNER JOIN dep_emp AS de
 ON (ce.emp_no = de.emp_no)
 INNER JOIN departments AS d
 ON (de.dept_no = d.dept_no);
+
+Select * FROM departments;
+
+SELECT ce.emp_no,
+ce.first_name,
+ce.last_name,
+d.dept_name
+INTO sales_dept_info
+FROM current_emp as ce
+INNER JOIN dep_emp AS de
+ON (ce.emp_no = de.emp_no)
+INNER JOIN departments AS d
+ON (de.dept_no = d.dept_no)
+WHERE d.dept_no = 'd007';
+
+SELECT ce.emp_no,
+ce.first_name,
+ce.last_name,
+d.dept_name
+INTO sales_development_dept_info
+FROM current_emp as ce
+INNER JOIN dep_emp AS de
+ON (ce.emp_no = de.emp_no)
+INNER JOIN departments AS d
+ON (de.dept_no = d.dept_no)
+WHERE d.dept_no IN ('d007', 'd005');
