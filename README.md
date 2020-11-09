@@ -24,12 +24,14 @@ For the second part of our analysis we ran a query to determine which employees 
 ![image name](https://github.com/jbates2549/Pewett-Hackard-Analysis/blob/main/mentorship_eligibility.PNG)
 
 ### Summary of Conclusions and Further Analysis
-We determined thatto compare the number of positions from the likely retiring group to the current positions in the mentorship group, we would need to summarize the members of the mentorship group by title as we did for the retirement group.  The table below shows this summary. 
+We determined that to compare the number of positions from the likely retiring group to the current positions in the mentorship group, we would need to summarize the mentoring  group by title as we did for the retirement group.  The table below shows this summary. 
 
 ![image name](https://github.com/jbates2549/Pewett-Hackard-Analysis/blob/main/mentoring_titles.PNG)
 
 We joined the mentoring group titles summary with the retiring titles summary to compare the number of positions for each group using a left join of the tables.  The summary of that query, below, shows the counts by position for each group.
+
 ![image name](https://github.com/jbates2549/Pewett-Hackard-Analysis/blob/main/combined_title.PNG)
+
 Based on our analysis we conclude the following:
 * There is a large shortage, overall in positions from the mentorship group.
 * The greatest needs are for Senior Engineers and Senior Staff followed by engineers.
