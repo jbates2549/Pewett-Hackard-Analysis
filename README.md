@@ -35,6 +35,5 @@ We joined the mentoring group titles summary with the retiring titles summary to
 Based on our analysis we conclude the following:
 * There is a large shortage, overall in positions from the mentorship group.
 * The greatest needs are for Senior Engineers and Senior Staff followed by engineers.
-* The Manager position is the least needed position to fill.
 * We needed a summary of the Employees Eligible for the mentorship program to compare to the retiring employees.  We created an addition query taking a count of the mentorship 
 * The recommendation is to augment overall staff immediately with focus on engineering positions.
